@@ -629,7 +629,7 @@ section {
 
 
 .about .image2 {
-  background: url("../img/Jaira.jpg") center center no-repeat;
+  background: url("/Jaira.jpg") center center no-repeat;
   background-size: cover;
   height: 500px;
   width: 350px;
