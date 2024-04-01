@@ -55,15 +55,24 @@
       <div class="button-container">
         <a href="Nunag, Jaira - Resume.pdf" id="cv" download>Download CV</a>
         <button id="play">Play Music</button>
-      <script>
-           let play = document.getElementById("play");
-               function playMusic() {
-                let audio = new Audio("audio.mp3");
-                audio.play()
-             }
-             play.addEventListener("click", playMusic);
-      </script>
-
+        <script>
+            let play = document.getElementById("play");
+            let audio = new Audio("audio.mp3");
+            let isMusicPlaying = false;
+            
+            function toggleMusic() {
+                if (isMusicPlaying) {
+                    audio.pause();
+                    isMusicPlaying = false;
+                    play.textContent = "Play Audio";
+                } else {
+                    audio.play();
+                    isMusicPlaying = true;
+                    play.textContent = "Stop Audio";
+                }
+            }
+            play.addEventListener("click", toggleMusic);
+        </script>
       </div>
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
