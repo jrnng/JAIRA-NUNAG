@@ -337,7 +337,6 @@ h6 {
   flex-direction: column;
   padding: 0 15px;
   background-color: #bea593;
-
 }
 
 #hero h1 {
@@ -346,6 +345,7 @@ h6 {
   font-family: "poppins";
   color: #fff;
   text-align: center;
+  
 }
 
 #hero h2 {
@@ -367,19 +367,6 @@ h6 {
   margin-top: 50px;
 }
 
-#cv{
-  padding: 12px 30px;
-  text-decoration: none;
-  border: #b08267 1px solid;
-  border-radius: 35px;
-  color: white;
-  margin-top: 2px ;
-  font-family: "poppins";
-}
-
-#cv:hover{
-  background-color: #b08267;
-}
 
 #hero .btn-scroll {
   transition: 0.4s;
@@ -633,8 +620,8 @@ section {
   background-size: cover;
   height: 500px;
   width: 350px;
-  border-radius:50px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .about .skills-content {
@@ -1064,5 +1051,103 @@ section {
 @media (max-width:770px){
   .wrapper{
     padding: 20px;
+  }
+}
+
+
+#cv{
+  padding: 12px 30px;
+  text-decoration: none;
+  border: #b08267 1px solid;
+  border-radius: 35px;
+  color: white;
+  margin-top: 2px ;
+  font-family: "poppins";
+}
+
+#cv:hover{
+  background-color: #b08267;
+}
+
+footer{
+  background-color: #b08267;
+}
+.footerContainer{
+  width: 100%;
+  padding: 50px 20px 20px ;
+  margin-top: 50px;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #6f4637;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
   }
 }
