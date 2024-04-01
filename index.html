@@ -52,7 +52,19 @@
       <h4>Welcome to my Portfolio</h4>
       <h1>Hello, </span> I am<span> JAIRA NUNAG</span></h1>
       <h2><span>A Frontend Web Developer</span></h2>
-      <a href="Nunag, Jaira - Resume.pdf" id="cv" download>Download CV</a>
+      <div class="button-container">
+        <a href="Nunag, Jaira - Resume.pdf" id="cv" download>Download CV</a>
+        <button id="play">Play Music</button>
+      <script>
+           let play = document.getElementById("play");
+               function playMusic() {
+                let audio = new Audio("audio.mp3");
+                audio.play()
+             }
+             play.addEventListener("click", playMusic);
+      </script>
+
+      </div>
       <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
     </div>
   </section><!-- End -->

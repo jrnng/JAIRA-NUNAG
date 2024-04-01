@@ -340,23 +340,23 @@ h6 {
 }
 
 #hero h1 {
-  margin: 0 0 30px 30px;
   font-size: 64px;
   font-family: "poppins";
   color: #fff;
   text-align: center;
+  margin-bottom: 20px;
   
 }
 
 #hero h2 {
   color: #eee;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "poppins";
-  margin-bottom: 20px;
+
 }
 
 #hero h4 {
@@ -1055,19 +1055,6 @@ section {
 }
 
 
-#cv{
-  padding: 12px 30px;
-  text-decoration: none;
-  border: #b08267 1px solid;
-  border-radius: 35px;
-  color: white;
-  margin-top: 2px ;
-  font-family: "poppins";
-}
-
-#cv:hover{
-  background-color: #b08267;
-}
 
 footer{
   background-color: #b08267;
@@ -1150,4 +1137,68 @@ footer{
       padding: 8px;
       margin: 4px;
   }
+}
+
+#play{
+  background-color: #97694f;
+  text-decoration: none;
+  border: #97694f 0.1px solid;
+  border-radius: 35px;
+  color: white;
+  margin-top: 2px ;
+  font-family: "poppins";
+  text-align: center;
+  
+}
+
+#cv{
+    background-color: #97694f;
+    text-decoration: none;
+    border:  #97694f 0.1px solid;
+    border-radius: 35px;
+    color: white;
+    margin-top: 2px ;
+    font-family: "poppins";
+}
+
+#play, #cv {
+  padding: 12px 15px 15px 17px;
+  text-decoration: none;
+  border-radius: 35px;
+  color: white;
+  font-family: "poppins";
+  width: 160px; /* Set width as desired */
+  height: 50px; /* Set height as desired */
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  
+}
+
+#play {
+  background-color: #97694f;
+}
+
+#cv {
+  background-color: #97694f; /* Adjust color as needed */
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+#cv:hover{
+  background-color: #b08267;
+  border:  #b08267 0.1px solid;
+  
+}
+
+#play:hover{
+  background-color: #b08267;  
+  border:  #b08267 0.1px solid;
+  
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
 }
